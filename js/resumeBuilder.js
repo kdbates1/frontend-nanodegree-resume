@@ -210,8 +210,8 @@ var projects = {
 			"description": "Convert project specifications and statements of problems and procedures to detailed logical flow charts for coding into computer language. Develop and write computer programs to store, locate, and retrieve specific documents, data, and information. May program web sites.",
 			"images":
 			[
-				"images/oss15.bmp", 
-				"images/oss18.bmp"
+				"images/project1.jpg", 
+				"images/project2.jpg"
 			]
 		},
 		{
@@ -220,8 +220,8 @@ var projects = {
 			"description": "A programmer-analyst writes, reviews, and modifies computer software. By encoding, testing, debugging and documenting programs, he is responsible for translating the work of software engineers so that the program may be read and run by a computer.",
 			"images":
 			[
-				"images/oss18.bmp", 
-				"images/oss15.bmp"
+				"images/project3.jpg", 
+				"images/project4.jpg"
 			]
 		}
 	],
