@@ -80,7 +80,7 @@ var education = {
 	"schools": 
 	[
 		{
-			"name": "Southern",
+			"name": "Acme University",
 			"location": "Baton Rouge, LA",
 			"degree": "BS",
 			"major": "Computer Science",
@@ -88,10 +88,10 @@ var education = {
 			"url": "http://www.sudr.edu"
 		},
 		{
-			"name": "McNeese",
+			"name": "Bugs Bunny School of Computers",
 			"location": "Lake Charles, LA",
 			"degree": "BS",
-			"major": "Crimanl Justice",
+			"major": "Build a Better Project",
 			"dates": "1994",
 			"url": "http://www.mcneese.edu"
 		}
@@ -135,18 +135,18 @@ var education = {
 			$(".education-entry:last").append(formattedMajor);
 		}
 			
-			$("#education").append(HTMLonlineClasses);			
+		$(".education-entry:last").append(HTMLonlineClasses);			
 			
-			for (onlinecourse in education.onlineCourses) {
+		for (onlinecourse in education.onlineCourses) {
 			var formattedTitle = HTMLonlineTitle.replace("%data%", education.onlineCourses[onlinecourse].title);	
 			var formattedSchool = HTMLonlineSchool.replace("%data%", education.onlineCourses[onlinecourse].school);	
 			var formattedDate = HTMLschoolDates.replace("%data%", education.onlineCourses[onlinecourse].date);	
 			var formattedURL = HTMLonlineURL.replace("%data%", education.onlineCourses[onlinecourse].url);	
 			var formattedTitleSchool = formattedTitle + formattedSchool; 	
 			
-			$("#education").append(formattedTitleSchool);
-			$("#education").append(formattedDate);
-			$("#education").append(formattedURL);
+			$(".education-entry:last").append(formattedTitleSchool);
+			$(".education-entry:last").append(formattedDate);
+			$(".education-entry:last").append(formattedURL);
 		}
 	}
 }
@@ -252,7 +252,7 @@ var projects = {
 }
 
 var name = "Kerry Bates";
-var role = "Web Developer";
+var role = "ACME Web Developer";
 
 var formattedName = HTMLheaderName.replace("%data%", name);
 var formattedRole = HTMLheaderRole.replace("%data%", role);
