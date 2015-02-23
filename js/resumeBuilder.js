@@ -1,32 +1,3 @@
-//$("#main").prepend(["Kerry Bates"]);
-
-// [string.replace([old], [new])
-
-//var awesomeThoughts = "I am Kerry and I am AWESOME!";
-//
-//var firstName = "Kerry";
-//
-//var age = 43;
-//
-//var name = "Kerry Bates";
-//var role = "Web Developer";
-//
-//var formattedName = HTMLheaderName.replace("%data%", name);
-//var formattedRole = HTMLheaderRole.replace("%data%", role);
-//
-//$("#header").prepend(formattedRole);
-//$("#header").prepend(formattedName);
-//
-//var string1 = "audalocation";
-//var string2 = string1.slice(1);
-//
-//var string3 = string2.replace("u", "U");
-//console.log(string3);
-//
-
-
-// console.log(awesomeThoughts);
-// console.log(funThoughts);
 var bio = {
 	"name": "Kerry",
 	"role": "Web Developer",
@@ -293,7 +264,5 @@ function inName(name){
 	
 	return name[0] + " " + name[1];
 }
-
-//$("#main").append(internationalizeButton);
 
 $("#mapDiv").append(googleMap);
