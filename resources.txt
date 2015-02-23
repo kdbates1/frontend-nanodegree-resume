@@ -1,0 +1,8 @@
+Classes
+1. JavaScript Basics
+
+Github repositories
+1. udacity/frontend-nanodegree-resume
+
+Forums
+1. https://piazza.com
