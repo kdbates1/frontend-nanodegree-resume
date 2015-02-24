@@ -1,5 +1,5 @@
 var bio = {
-	"name": "Kerry",
+	"name": "Kerry Bates",
 	"role": "Web Developer",
 	"contacts": {
 		"mobile": "214-708-4340",
@@ -12,6 +12,8 @@ var bio = {
 	"skills": ["Being Cool", "Acting Cool", "Looking Cool", "All Things Cool"],
 	"biopic": "images/biopic.jpg",
 	"display": function displayBio(){
+		var formattedName = HTMLheaderName.replace("%data%", bio.name);
+		var formattedRole = HTMLheaderRole.replace("%data%", bio.role);
 		var formattedMobile = HTMLmobile.replace("%data%", bio.contacts.mobile);	
 		var formattedEmail = HTMLemail.replace("%data%", bio.contacts.email);
 		var formattedGithub = HTMLtwitter.replace("%data%", bio.contacts.github);
@@ -20,6 +22,9 @@ var bio = {
 		var formattedBiopic = HTMLbioPic.replace("%data%", bio.biopic);
 		var formattedWelcome = HTMLWelcomeMsg.replace("%data%", bio.welcomeMessage);
 	
+		$("#header").prepend(formattedRole);
+		$("#header").prepend(formattedName);
+
 		$("#topContacts").append(formattedMobile);
 		$("#topContacts").append(formattedEmail);
 		$("#topContacts").append(formattedGithub);
@@ -221,15 +226,6 @@ var projects = {
 		}
 	}
 }
-
-var name = "Kerry Bates";
-var role = "ACME Web Developer";
-
-var formattedName = HTMLheaderName.replace("%data%", name);
-var formattedRole = HTMLheaderRole.replace("%data%", role);
-
-$("#header").prepend(formattedRole);
-$("#header").prepend(formattedName);
 
 bio.display();
 work.display();
